@@ -1,7 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Menu from './components/header/Menu'
+import Home from './components/header/Home'
 
 function App() {
 
@@ -9,9 +8,8 @@ function App() {
   return (
     <>
         <div className="header">
-            menu superior
-            fundo
-            logo
+            <Menu />
+            <Home />
         </div>
 
         <div className="chamada">

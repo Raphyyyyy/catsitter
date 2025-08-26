@@ -1,0 +1,40 @@
+.menuPai {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f85d;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    background-color: aqua;
+    width: 10%;
+    height: 100%;
+}
+
+.agendar {
+    background-color: lightgreen;
+    width: 10%;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
