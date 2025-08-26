@@ -6,6 +6,7 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
+
   useEffect(() => {
     const onResize = () => setIsMobile(window.innerWidth < 1024);
     window.addEventListener("resize", onResize);
@@ -37,6 +38,7 @@ export default function Home() {
     <div className="homePai">
       <div className="logoGrande">
         <img src="/wecare logo.png" alt="Logo" />
+        Catsitters veterinárias em São Paulo, SP
       </div>
 
       <div className="sobrepor" />
