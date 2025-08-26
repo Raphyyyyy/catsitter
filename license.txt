@@ -1,0 +1,7 @@
+Copyright © 2024 Rafael Nunes
+
+Todos os direitos reservados.
+
+Este código é disponibilizado publicamente apenas para visualização.  
+Não é permitido copiar, modificar, redistribuir ou reutilizar qualquer parte deste projeto  
+sem autorização expressa do autor.
