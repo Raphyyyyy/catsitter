@@ -1,6 +1,6 @@
 .homePai{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     overflow: hidden;
 }
@@ -8,7 +8,7 @@
 .sobrepor {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle, #ff9100, #ff3300, #000);
+  background: radial-gradient(circle, #ff9100, #ff330077, #ff00bf);
   background-size: 200% 200%;
   animation: pulsarDegrade 12s ease-in-out infinite;
   opacity: 0.85;
@@ -37,4 +37,34 @@
         z-index: 2;
         left: 35%;
         top: 25%;
+}
+
+
+.degradeHeader{
+    position: absolute;
+    bottom: 25%;
+    width: 100vw;
+    height: 85%;
+    z-index: 2;
+}
+
+
+
+@media screen and (max-width: 768px) {
+.degradeHeader {
+    bottom: 100%;
+    width: 150%;
+    z-index: 1;
+}
+
+.logoGrande{
+        left: 3%;
+        top: 25%;
+        width: 60%;
+    }
+
+  .logoGrande img{
+        width: 150%;
+    }
+  
 }

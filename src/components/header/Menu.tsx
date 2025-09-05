@@ -1,25 +1,63 @@
-import React from 'react'
-import '../../style/Menu.css'
+import React from "react";
+import "../../style/Menu.css";
+import { FaWhatsapp } from "react-icons/fa";
+import { DBMenu } from "../../DB/DB";
 
-const menu = () => {
+const Menu = () => {
   return (
     <div>
       <div className="menuPai">
-        <div className="logo">xx</div>
+        {/* Logo */}
+        <div className="logoPequeno">
+          <img src={DBMenu.logos.pequeno} alt="Logo" className="logoPequeno" />
+        </div>
+
+        {/* Fundo do logo */}
+        <div className="logoPequenoBack">
+          <img
+            src={DBMenu.logos.fundoEsquerda}
+            className="logoPequenoBack"
+            alt="Fundo Esquerdo"
+          />
+        </div>
+
+        {/* Menu principal */}
         <nav className="menu">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#planos">Planos</a></li>
-            <li><a href="#area">Área</a></li>
-            <li><a href="#faq">Perguntas Frequentes</a></li>
-            <li><a href="#contato">Contato</a></li>
+            {DBMenu.links
+              .filter((link) => link.type !== "whatsapp") // menos o do whats
+              .map((link, index) => (
+                <li key={index}>
+                  <a href={link.href}>{link.label}</a>
+                </li>
+              ))}
           </ul>
         </nav>
-        <div className="agendar">agendar</div>
+
+        {/* Link especial do WhatsApp */}
+        {DBMenu.links
+          .filter((link) => link.type === "whatsapp")
+          .map((link, index) => (
+            <div className="agendar" key={index}>
+              <a href={link.href} target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="whatsMenu" />
+                {/* Renderiza HTML para não bugar o <br/> */}
+                <p dangerouslySetInnerHTML={{ __html: link.label }} />
+              </a>
+            </div>
+          ))}
+
+        {/* Fundo direito */}
+        <div className="logoPequenoBack2">
+          <img
+            src={DBMenu.logos.fundoDireita}
+            className="logoPequenoBack2"
+            alt="Fundo Direito"
+          />
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default menu
+export default Menu;
