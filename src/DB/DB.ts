@@ -9,12 +9,12 @@ export const DBMenu = {
     fundoDireita: "FundoLogoPeq2.png",
   },
   links: [
-    { label: "Home", href: "#" },
-    { label: "Serviços", href: "#servicos" },
-    { label: "Planos", href: "#planos" },
-    { label: "Área", href: "#area" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Contato", href: "#contato" },
+    { label: "Home", href: "#", id:1 },
+    { label: "Serviços", href: "#servicos", id:2 },
+    { label: "Planos", href: "#planos", id:3 },
+    { label: "Área", href: "#area", id:4 },
+    { label: "FAQ", href: "#faq", id:5 },
+    { label: "Contato", href: "#contato", id:6 },
     {
       label: "Agendar no<br/>Whatsapp",
       href: "https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20o%20servi%C3%A7o.",

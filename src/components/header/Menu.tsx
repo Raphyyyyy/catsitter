@@ -2,8 +2,18 @@ import React from "react";
 import "../../style/Menu.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { DBMenu } from "../../DB/DB";
+import { useIsMobile } from "../../hooks/IsMobile";
 
 const Menu = () => {
+  const isMobile = useIsMobile();
+
+  const mainLinks = DBMenu.links
+    .filter((link) => link.type !== "whatsapp")
+    .filter((link) => {
+      if (!isMobile) return true;
+      return [2, 3, 4].includes(link.id);
+    });
+
   return (
     <div>
       <div className="menuPai">
@@ -24,13 +34,11 @@ const Menu = () => {
         {/* Menu principal */}
         <nav className="menu">
           <ul>
-            {DBMenu.links
-              .filter((link) => link.type !== "whatsapp") // menos o do whats
-              .map((link, index) => (
-                <li key={index}>
-                  <a href={link.href}>{link.label}</a>
-                </li>
-              ))}
+            {mainLinks.map((link, index) => (
+              <li key={index}>
+                <a href={link.href}>{link.label}</a>
+              </li>
+            ))}
           </ul>
         </nav>
 
@@ -41,7 +49,6 @@ const Menu = () => {
             <div className="agendar" key={index}>
               <a href={link.href} target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="whatsMenu" />
-                {/* Renderiza HTML para não bugar o <br/> */}
                 <p dangerouslySetInnerHTML={{ __html: link.label }} />
               </a>
             </div>

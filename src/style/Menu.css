@@ -42,19 +42,6 @@
     margin: 0;
 }
 
-@media screen and (max-width: 768px) {
-.menuPai {
-    height: 10%;
-}
-
-.menu ul{
-    gap: 5px;
-}
-
-.menu li a {
-padding: 0 1px 0 1px;
-}}
-
 .menu li a {
   text-decoration: none; 
   color: black;          
@@ -128,3 +115,64 @@ padding: 0 1px 0 1px;
 
 
 
+@media screen and (max-width: 768px) {
+.menuPai {
+    overflow: hidden;
+    gap: 10px;
+}
+
+.logoPequeno {
+  height: 100%;
+  width: 20%;
+}
+
+.logoPequeno img{
+    width: 70%;
+}
+
+.logoPequenoBack{
+    width: 20%;
+    height: 50%;
+    top: 0vh;
+}
+
+.logoPequenoBack img{
+    height: auto;
+    width: 100%;
+
+}
+
+
+.menuPai {
+    height: 10%;
+}
+
+.menu ul{
+    gap: 25px;
+}
+
+.menu li a {
+padding: 0 1px 0 1px;
+font-size: 0.85rem;
+}
+
+.agendar{
+    width: 15%;
+    font-size: 0.7rem;
+
+}
+
+.logoPequenoBack2 img{
+    width: 50%;
+    height: 100%;
+    bottom: 0;
+}
+
+.whatsMenu {
+    display: none;
+        font-size: 100%;
+        right: 0rem;
+        bottom: 0.5rem;
+}
+
+}

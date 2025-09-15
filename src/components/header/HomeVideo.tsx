@@ -1,23 +1,18 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { DBHomeVideo } from "../../DB/DB";
+import { useIsMobile } from "../../hooks/IsMobile"; // ajuste o caminho conforme necessário
 import "../../style/Home.css";
 
 export default function HomeVideo() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const isMobile = useIsMobile();
   const videoRef = useRef<HTMLVideoElement | null>(null);
-
-  useEffect(() => {
-    const onResize = () => setIsMobile(window.innerWidth < 1024);
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-  }, []);
 
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
 
     const setRate = () => {
-      v.playbackRate = isMobile ? 0.8 : 0.6; 
+      v.playbackRate = isMobile ? 0.8 : 0.6;
     };
     const keepPlaying = async () => {
       if (v.paused) await v.play();
