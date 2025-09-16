@@ -1,11 +1,9 @@
 .slider {
   position: relative;
   width: 100%;
-  max-width: 400px;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 16px;
-  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
