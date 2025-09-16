@@ -1,0 +1,15 @@
+.Background-principal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -99999;
+
+  transparency: 0.5;
+
+  background-image: url('/back.jpg'); /* certifique-se que está em /public */
+  background-repeat: repeat;
+  background-size: auto; /* ou use 'contain' ou 'cover' dependendo do que quiser */
+  background-position: top left;
+}

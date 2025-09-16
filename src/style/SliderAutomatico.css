@@ -1,0 +1,38 @@
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 16px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-imagem {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+}
+
+.slider-imagem.ativa {
+  opacity: 1;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .slider-imagem {
+    object-fit: contain;
+  }
+}

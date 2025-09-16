@@ -36,8 +36,8 @@ export const DBHome = {
 }
 
 //---------------------------------------------------------------------------------------------------------------
-//Serviços
-export const DBServicos = [
+//Apresentação
+export const DBApresentacao = [
   {
     chamada: "Catsitters veterinárias em São Paulo, SP",
     subchamada:"Cuidado profissional, carinhoso e seguro para gatinhos no conforto da sua casa — visitas agendadas, relatórios com fotos e suporte de quem entende de saúde felina.",
@@ -45,7 +45,10 @@ export const DBServicos = [
     opt1: "Agendar agora",
     opt1Link: "https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20o%20servi%C3%A7o.",
     opt2: "Ver Planos",
-    img: "/servicos.png",
+    img1: "/GatoM1.png",
+    img2: "/GatoM2.png",
+    img3: "/GatoM3.png",
+    img4: "/GatoM4.png",
   },
 ];
 //----------------------------------------------------------------------------------------------------------------

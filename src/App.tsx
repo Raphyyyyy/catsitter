@@ -1,6 +1,7 @@
 import './App.css'
 import Menu from './components/header/Menu'
 import Home from './components/header/Home'
+import Apresentacao from './components/apresentacao/Apresentacao'
 
 function App() {
 
@@ -13,15 +14,7 @@ function App() {
         </div>
 
         <div className="chamada">
-            Catsitters veterinárias em São Paulo, SP
-                Cuidado profissional e carinhoso para gatinhos no conforto da sua casa — visitas agendadas, relatórios com fotos e suporte de quem entende de saúde felina.
-
-                100% domiciliar
-                Relatório com fotos
-                Medicação oral/tópica
-                Profissionais veterinárias
-                Agendar agora
-                Ver planos
+            <Apresentacao />
         </div>
 
         <div className="servicos">

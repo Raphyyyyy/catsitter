@@ -42,9 +42,9 @@
 
 .degradeHeader{
     position: absolute;
-    bottom: 25%;
+    bottom: 45%;
     width: 100vw;
-    height: 85%;
+    height: 75%;
     z-index: 2;
 }
 
@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 768px) {
 .degradeHeader {
-    bottom: 100%;
+    bottom: 50%;
     width: 150%;
     z-index: 1;
 }
