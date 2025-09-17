@@ -1,0 +1,26 @@
+.servicosCardPai {
+  flex: 1 1 25rem; 
+  max-width: 20rem;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 231, 220);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-size: 1.2rem;
+}
+
+.servicosCardItem {
+font-size: 0.8rem;
+list-style: none;
+font-weight: 100;
+}
+
+.servicosCardPai ul {
+  margin: 0;
+  padding-left: 0;
+  padding-inline-start: 0;
+  list-style: none; 
+  line-height: 3.6;
+}

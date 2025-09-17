@@ -51,4 +51,39 @@ export const DBApresentacao = [
     img4: "/GatoM4.png",
   },
 ];
-//----------------------------------------------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------------------------------------------
+// Serviços
+export const DBServicos = [
+  {
+    titulo: "O que está incluso",
+    servico1: {
+      titulo: "Visita Essencial (30–40 min)",
+      descricao: [
+        "Troca de água e reposição de ração/latinha",
+        "Limpeza básica da caixa de areia",
+        "Enriquecimento ambiental e brincadeiras",
+        "Relatório com fotos e status"
+      ]
+    },
+    servico2: {
+      titulo: "Visita Premium (50–60 min)",
+      descricao: [
+        "Tudo da Essencial + escovação",
+        "Administração de medicação oral/tópica*",
+        "Mais tempo de interação e observação clínica",
+        "Checklist personalizado",
+        "* Medicação injetável sob avaliação."
+      ]
+    },
+    servico3: {
+      titulo: "Pernoite / Plantão",
+      descricao: [
+        "Acompanhamento prolongado para gatos seniores ou pós‑operatório",
+        "Relatórios detalhados com fotos e vídeos",
+        "Monitoramento de sinais vitais (quando necessário)",
+        "Contato direto com responsável"
+      ]
+    }
+  }
+];

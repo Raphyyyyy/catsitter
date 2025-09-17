@@ -1,0 +1,30 @@
+import { DBServicos } from "../../DB/DB";
+import "../../style/ServicosCard.css";
+
+const ServicosCard = () => {
+  const cardColors = ["#F5E7DC", "#E0F7FA", "#FDEBD0"]; // cores diferentes para os 3 cards
+
+  return (
+    <>
+      {["servico1", "servico2", "servico3"].map((key, index) => {
+        const servico = DBServicos[0][key];
+        return (
+          <div
+            className="servicosCardPai"
+            key={key}
+            style={{ backgroundColor: cardColors[index] }}
+          >
+            <h2 className="servicosCardTitulo">{servico.titulo}</h2>
+            <ul>
+              {servico.descricao.map((item, i) => (
+                <li key={i} className="servicosCardItem">{item}</li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+export default ServicosCard;

@@ -2,6 +2,7 @@ import './App.css'
 import Menu from './components/header/Menu'
 import Home from './components/header/Home'
 import Apresentacao from './components/apresentacao/Apresentacao'
+import Servicos from './components/servicos/Servicos'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
         </div>
 
         <div className="servicos">
-            o que esta incluso
+            <Servicos />
         </div>
 
         <div className="mapa">
