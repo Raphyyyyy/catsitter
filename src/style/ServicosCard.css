@@ -1,7 +1,8 @@
 .servicosCardPai {
   flex: 1 1 25rem; 
   max-width: 20rem;
-  min-height: 25rem;
+  height: 25rem;
+  min-height: 5rem;
   display: flex;
   flex-direction: column;
   background-color: rgb(245, 231, 220);
@@ -23,4 +24,26 @@ font-weight: 100;
   padding-inline-start: 0;
   list-style: none; 
   line-height: 3.6;
+}
+
+.servicosCardTitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.servicosCardSubtitulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  color: #555;
 }

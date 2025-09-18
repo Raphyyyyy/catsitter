@@ -1,8 +1,9 @@
 import { DBServicos } from "../../DB/DB";
 import "../../style/ServicosCard.css";
+import Back from "../Back";
 
 const ServicosCard = () => {
-  const cardColors = ["#F5E7DC", "#E0F7FA", "#FDEBD0"]; // cores diferentes para os 3 cards
+  const cardColors = ["#ff6f003b", "#00e1ff2d", "#ff05ff49"]; // cores diferentes para os 3 cards
 
   return (
     <>
@@ -15,11 +16,13 @@ const ServicosCard = () => {
             style={{ backgroundColor: cardColors[index] }}
           >
             <h2 className="servicosCardTitulo">{servico.titulo}</h2>
+            <h3 className="servicosCardSubtitulo">{servico.subtitulo}</h3>
             <ul>
               {servico.descricao.map((item, i) => (
                 <li key={i} className="servicosCardItem">{item}</li>
               ))}
             </ul>
+            
           </div>
         );
       })}

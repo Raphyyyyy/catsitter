@@ -1,5 +1,7 @@
 // src/DB/DB.ts
 
+import { sub } from "framer-motion/client";
+
 export const DBMenu = {
 //----------------------------------------------------------------------------------------------------------------
 //Menu
@@ -58,7 +60,8 @@ export const DBServicos = [
   {
     titulo: "O que está incluso",
     servico1: {
-      titulo: "Visita Essencial (30–40 min)",
+      titulo: "Visita Essencial ",
+      subtitulo: "(30–40 min)",
       descricao: [
         "Troca de água e reposição de ração/latinha",
         "Limpeza básica da caixa de areia",
@@ -67,7 +70,8 @@ export const DBServicos = [
       ]
     },
     servico2: {
-      titulo: "Visita Premium (50–60 min)",
+      titulo: "Visita Premium ",
+      subtitulo: "(50–60 min)",
       descricao: [
         "Tudo da Essencial + escovação",
         "Administração de medicação oral/tópica*",
@@ -77,7 +81,8 @@ export const DBServicos = [
       ]
     },
     servico3: {
-      titulo: "Pernoite / Plantão",
+      titulo: "Plantão",
+      subtitulo: "Pernoite",
       descricao: [
         "Acompanhamento prolongado para gatos seniores ou pós‑operatório",
         "Relatórios detalhados com fotos e vídeos",
