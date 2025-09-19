@@ -12,6 +12,7 @@
   font-size: 1.2rem;
 }
 
+
 .servicosCardItem {
 font-size: 0.8rem;
 list-style: none;
@@ -46,4 +47,23 @@ font-weight: 100;
   margin-top: -0.5rem;
   margin-bottom: 1rem;
   color: #555;
+}
+
+.iconeCardServ {
+  width: 2rem;
+  position: absolute;
+  height: auto;
+  align-self: center;
+  margin-top: auto;
+
+}
+
+@media screen and (max-width: 768px) {
+  .servicosCardPai {
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+    padding: 1rem;
+    font-size: 1rem;
+  }
 }

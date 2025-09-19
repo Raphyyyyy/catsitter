@@ -62,6 +62,7 @@ export const DBServicos = [
     servico1: {
       titulo: "Visita Essencial ",
       subtitulo: "(30–40 min)",
+      icone: "c1.png",
       descricao: [
         "Troca de água e reposição de ração/latinha",
         "Limpeza básica da caixa de areia",
@@ -72,6 +73,7 @@ export const DBServicos = [
     servico2: {
       titulo: "Visita Premium ",
       subtitulo: "(50–60 min)",
+      icone: "c2.png",
       descricao: [
         "Tudo da Essencial + escovação",
         "Administração de medicação oral/tópica*",
@@ -83,6 +85,7 @@ export const DBServicos = [
     servico3: {
       titulo: "Plantão",
       subtitulo: "Pernoite",
+      icone: "c3.png",
       descricao: [
         "Acompanhamento prolongado para gatos seniores ou pós‑operatório",
         "Relatórios detalhados com fotos e vídeos",

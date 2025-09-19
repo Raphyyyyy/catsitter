@@ -136,12 +136,12 @@
 
 .logoPequenoBack{
     width: 20%;
-    height: 50%;
+    height: 100%;
     top: 0vh;
 }
 
 .logoPequenoBack img{
-    height: auto;
+    height: 100%;
     width: 100%;
 
 }
@@ -163,6 +163,7 @@ font-size: 0.85rem;
 .agendar{
     width: 15%;
     font-size: 0.7rem;
+    margin-right: 1rem;
 
 }
 

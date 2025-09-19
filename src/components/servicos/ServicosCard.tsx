@@ -15,6 +15,7 @@ const ServicosCard = () => {
             key={key}
             style={{ backgroundColor: cardColors[index] }}
           >
+            <img src={servico.icone} className="iconeCardServ"/>
             <h2 className="servicosCardTitulo">{servico.titulo}</h2>
             <h3 className="servicosCardSubtitulo">{servico.subtitulo}</h3>
             <ul>
@@ -22,7 +23,6 @@ const ServicosCard = () => {
                 <li key={i} className="servicosCardItem">{item}</li>
               ))}
             </ul>
-            
           </div>
         );
       })}
