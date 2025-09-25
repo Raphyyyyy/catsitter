@@ -3,6 +3,7 @@ import Menu from './components/header/Menu'
 import Home from './components/header/Home'
 import Apresentacao from './components/apresentacao/Apresentacao'
 import Servicos from './components/servicos/Servicos'
+import Area from './components/area/AreaAtt'
 
 function App() {
 
@@ -23,7 +24,7 @@ function App() {
         </div>
 
         <div className="mapa">
-            onde atendemos
+            <Area />
         </div>
 
         <div className="plano">

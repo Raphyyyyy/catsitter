@@ -8,13 +8,6 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
-    .servicosPai {
-        padding: 5% 5%;
-        gap: 2rem;
-    }
-    
-}
 
 .servicosCards {
     display: flex;
@@ -22,7 +15,7 @@
     justify-content: center;
     /* align-items: center; */
     gap: 20px;
-    flex-wrap: wrap;
+
 }
 
 .servicosPai h1 {
@@ -30,4 +23,16 @@
     font-weight: 600;
     color: rgb(51, 51, 51);
     margin-left: 7%;
+}
+
+@media screen and (max-width: 768px) {
+    .servicosPai {
+        padding: 5% 5%;
+        gap: 2rem;
+    }
+
+    .servicosCards{
+        flex-wrap: wrap;
+    }
+    
 }

@@ -3,20 +3,20 @@
 import { sub } from "framer-motion/client";
 
 export const DBMenu = {
-//----------------------------------------------------------------------------------------------------------------
-//Menu
-    logos: {
+  //----------------------------------------------------------------------------------------------------------------
+  //Menu
+  logos: {
     pequeno: "/wecare logo.png",
     fundoEsquerda: "FundoLogoPeq.png",
     fundoDireita: "FundoLogoPeq2.png",
   },
   links: [
-    { label: "Home", href: "#", id:1 },
-    { label: "Serviços", href: "#servicos", id:2 },
-    { label: "Planos", href: "#planos", id:3 },
-    { label: "Área", href: "#area", id:4 },
-    { label: "FAQ", href: "#faq", id:5 },
-    { label: "Contato", href: "#contato", id:6 },
+    { label: "Home", href: "#", id: 1 },
+    { label: "Serviços", href: "#servicos", id: 2 },
+    { label: "Planos", href: "#planos", id: 3 },
+    { label: "Área", href: "#area", id: 4 },
+    { label: "FAQ", href: "#faq", id: 5 },
+    { label: "Contato", href: "#contato", id: 6 },
     {
       label: "Agendar no<br/>Whatsapp",
       href: "https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20o%20servi%C3%A7o.",
@@ -33,8 +33,8 @@ export const DBHomeVideo = {
 };
 
 export const DBHome = {
-    logoGrande: "/wecare logo.png",
-    degradeHeader: "degrade-header.png",
+  logoGrande: "/wecare logo.png",
+  degradeHeader: "degrade-header.png",
 }
 
 //---------------------------------------------------------------------------------------------------------------
@@ -42,7 +42,7 @@ export const DBHome = {
 export const DBApresentacao = [
   {
     chamada: "Catsitters veterinárias em São Paulo, SP",
-    subchamada:"Cuidado profissional, carinhoso e seguro para gatinhos no conforto da sua casa — visitas agendadas, relatórios com fotos e suporte de quem entende de saúde felina.",
+    subchamada: "Cuidado profissional, carinhoso e seguro para gatinhos no conforto da sua casa — visitas agendadas, relatórios com fotos e suporte de quem entende de saúde felina.",
     tags: ["100% domiciliar", "Relatório com fotos", "Administração de medicação", "relatórios com fotos", "Profissionais veterinárias"],
     opt1: "Agendar agora",
     opt1Link: "https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20o%20servi%C3%A7o.",
@@ -95,3 +95,21 @@ export const DBServicos = [
     }
   }
 ];
+
+//---------------------------------------------------------------------------------------------------------------
+// Area de atendimento
+export const DBArea = {
+  titulo: "Atendemos em São Paulo, SP",
+  subtitulo1: "Bairros atendidos (consulte disponibilidade):",
+  subtitulo2: "Outras regiões sob consulta. Taxa de deslocamento pode ser aplicada.",
+  locais: [
+    { nome: "Pinheiros", ativo: true },
+    { nome: "Vila Madalena", ativo: true },
+    { nome: "Perdizes", ativo: false },
+    { nome: "Moema", ativo: true },
+    { nome: "Itaim Bibi", ativo: true },
+    { nome: "Brooklin", ativo: true },
+    { nome: "Bela Vista", ativo: true },
+  ],
+  linkMaps:'https://www.google.com/maps/d/u/1/embed?mid=1_BQgYBdsMuzTMhZLRqB5HDMcVbbRy2M&ehbc=2E312Fhttps://www.google.com/maps/d/u/1/embed?mid=1_BQgYBdsMuzTMhZLRqB5HDMcVbbRy2M&ehbc=2E312F&noprof=1',
+};
