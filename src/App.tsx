@@ -4,6 +4,10 @@ import Home from './components/header/Home'
 import Apresentacao from './components/apresentacao/Apresentacao'
 import Servicos from './components/servicos/Servicos'
 import Area from './components/area/AreaAtt'
+import Planos from './components/planos/Planos'
+import Depo from './depoimentos/depo'
+import FAQ from './components/faq/Faq'
+import Contato from './components/contato/Contato'
 
 function App() {
 
@@ -28,22 +32,22 @@ function App() {
         </div>
 
         <div className="plano">
-            planos
+            <Planos />
         </div>
 
         <div className="depoimentos">
-            depoimentos
+            <Depo />
         </div>
 
         <div className="perguntas">
-
+            <FAQ />
         </div>
 
         <div className="contato">
-            
+            <Contato />
         </div>
 
-        <div>x</div><div>x</div><div>x</div><div>x</div><div>x</div><div>x</div><div>x</div><div>x</div><div>x</div><div>x</div>
+        
     </>
   )
 }

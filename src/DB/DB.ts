@@ -1,8 +1,18 @@
 // src/DB/DB.ts
-
 import { sub } from "framer-motion/client";
 
+//----------------------------------------------------------------------------------------------------------------
+  //Whatsapp
+      const whatsNumero = "5511999999999";
+      const whatsMsgPadrao = "Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20o%20servi%C3%A7o.";
+      const whatsappLinkPadrao = `https://api.whatsapp.com/send?phone=${whatsNumero}&text=${whatsMsgPadrao}`;
+      const msgPlano = "Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20";
+      const whatsappLinkPlano = `https://api.whatsapp.com/send?phone=${whatsNumero}&text=${msgPlano}`;
+
+//----------------------------------------------------------------------------------------------------------------
 export const DBMenu = {
+  
+
   //----------------------------------------------------------------------------------------------------------------
   //Menu
   logos: {
@@ -19,7 +29,7 @@ export const DBMenu = {
     { label: "Contato", href: "#contato", id: 6 },
     {
       label: "Agendar no<br/>Whatsapp",
-      href: "https://api.whatsapp.com/send?phone=5511999999999&text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20o%20servi%C3%A7o.",
+      href: whatsappLinkPadrao,
       type: "whatsapp", // identificador especial do ícone
     },
   ],
@@ -112,4 +122,129 @@ export const DBArea = {
     { nome: "Bela Vista", ativo: true },
   ],
   linkMaps:'https://www.google.com/maps/d/u/1/embed?mid=1_BQgYBdsMuzTMhZLRqB5HDMcVbbRy2M&ehbc=2E312Fhttps://www.google.com/maps/d/u/1/embed?mid=1_BQgYBdsMuzTMhZLRqB5HDMcVbbRy2M&ehbc=2E312F&noprof=1',
+};
+
+//---------------------------------------------------------------------------------------------------------------
+// Planos
+
+export const DBPlanos = {
+  titulo: "Planos WeCare",
+  subtitulo: "Valores base. O total pode variar conforme distância, número de gatos e necessidades específicas.",
+  planos: [
+    {
+      id: 1,
+      nome: "Essencial",
+      valor: "R$ 79",
+      cond: "/visita",
+      descricao: "Para gatinhos independentes ou visitas diárias simples.",
+      botao: "Quero esse",
+      botaoLink: `https://api.whatsapp.com/send?phone=${whatsNumero}&text=${msgPlano}Essencial.`,
+    },
+        {
+      id: 2,
+      nome: "Premium",
+      valor: "R$ 119",
+      cond: "/visita",
+      descricao: "Mais tempo e suporte clínico básico por veterinárias.",
+      botao: "Quero esse",
+      botaoLink: `https://api.whatsapp.com/send?phone=${whatsNumero}&text=${msgPlano}Premium.`,
+    },
+        {
+      id: 3,
+      nome: "Pernoite",
+      valor: "R$ 290",
+      cond: "/noite",
+      descricao: "Para necessidades especiais, idosos ou pós‑operatório.",
+      botao: "Quero esse",
+      botaoLink: `https://api.whatsapp.com/send?phone=${whatsNumero}&text=${msgPlano}Pernoite.`,
+    },
+  ],
+}
+
+//----------------------------------------------------------------------------------------------------------------
+// Perguntas Frequentes (FAQ)
+export const DBFAQ = [
+  {
+    pergunta: "O que diferencia catsitters veterinárias?",
+    resposta: "Além do carinho, temos formação para observar sinais clínicos, administrar medicação e orientar sobre bem‑estar felino.",
+  },
+  {
+    pergunta: "Vocês dormem na casa?",
+    resposta: "Oferecemos pernoite sob disponibilidade e avaliação do caso.",
+  },
+  {
+    pergunta: "Como funcionam os relatórios?",
+    resposta: "Após cada visita enviamos fotos, resumo do apetite, brincadeiras, caixa de areia e observações gerais.",
+  },
+  {
+    pergunta: "É necessário chave ou senha?",
+    resposta: "Combinamos a forma de acesso mais confortável e segura para você (chave, portaria, cofre de chaves, etc.).",
+  },
+];
+
+//---------------------------------------------------------------------------------------------------------------
+//  Depoimentos
+export const DBDepoimentos = [
+  {
+    nome: "Tutora 1",
+    texto: "Equipe atenciosa, minhas gatinhas ficaram super tranquilas. Recebi fotos e um relatório a cada visita!",
+    foto: "/depo1.png",
+  },
+  {
+    nome: "Tutora 2",
+    texto: "Equipe atenciosa, minhas gatinhas ficaram super tranquilas. Recebi fotos e um relatório a cada visita!",
+    foto: "/depo2.png",
+  },
+  {
+    nome: "Tutora 3",
+    texto: "Equipe atenciosa, minhas gatinhas ficaram super tranquilas. Recebi fotos e um relatório a cada visita!",
+    foto: "/depo3.png",
+  },
+];
+
+
+//---------------------------------------------------------------------------------------------------------------
+// Fale com a gente / Contato
+export const DBContato = {
+  titulo: "Fale com a gente",
+  subtitulo: "Agende pelo WhatsApp ou envie um e‑mail. Resposta rápida!",
+whatsapp: {
+  label: "WhatsApp",
+  numeroVisivel: whatsNumero.replace("55", "+55").replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3"),
+  numeroFormatado: whatsNumero, // reutiliza a variável global
+  link: `https://api.whatsapp.com/send?phone=${whatsNumero}`,
+  botao: "Chamar no WhatsApp",
+},
+  email: {
+    label: "E‑mail",
+    endereco: "contato@miaucare.com.br",
+  },
+  endereco: "Rua Exemplo, 123 – São Paulo, SP",
+  instagram: {
+    label: "Instagram",
+    usuario: "@miaucare",
+    link: "https://www.instagram.com/miaucare",
+  },
+  formulario: {
+    campos: {
+      nome: {
+        label: "Seu nome",
+        placeholder: "Ex.: Ana Paula",
+      },
+      email: {
+        label: "E‑mail",
+        placeholder: "voce@email.com",
+      },
+      bairro: {
+        label: "Bairro",
+        placeholder: "Ex.: Pinheiros",
+      },
+      mensagem: {
+        label: "Mensagem",
+        placeholder: "Conte sobre seus gatinhos e as datas desejadas",
+      },
+    },
+    botaoEnviar: "Enviar",
+    aviso: "Ao enviar, você concorda com nossa política de privacidade.",
+  },
 };
