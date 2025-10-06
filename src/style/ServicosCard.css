@@ -12,6 +12,11 @@
   font-size: 1.2rem;
 }
 
+.servicosCardPai:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
 
 .servicosCardItem {
 font-size: 0.8rem;

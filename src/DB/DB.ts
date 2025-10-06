@@ -139,6 +139,7 @@ export const DBPlanos = {
       descricao: "Para gatinhos independentes ou visitas diárias simples.",
       botao: "Quero esse",
       botaoLink: `https://api.whatsapp.com/send?phone=${whatsNumero}&text=${msgPlano}Essencial.`,
+      icone: "c1.png",
     },
         {
       id: 2,
@@ -148,6 +149,7 @@ export const DBPlanos = {
       descricao: "Mais tempo e suporte clínico básico por veterinárias.",
       botao: "Quero esse",
       botaoLink: `https://api.whatsapp.com/send?phone=${whatsNumero}&text=${msgPlano}Premium.`,
+      icone: "c2.png",
     },
         {
       id: 3,
@@ -157,6 +159,7 @@ export const DBPlanos = {
       descricao: "Para necessidades especiais, idosos ou pós‑operatório.",
       botao: "Quero esse",
       botaoLink: `https://api.whatsapp.com/send?phone=${whatsNumero}&text=${msgPlano}Pernoite.`,
+      icone: "c3.png",
     },
   ],
 }
