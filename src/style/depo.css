@@ -1,0 +1,56 @@
+.depoPai {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 22rem;
+    height: 60vh;
+    width: 60%;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+
+.depoTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+    margin-top: 2rem;
+
+    width: 100%;
+}
+
+.depoCards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    width: 100%;
+    height: 58vh;
+}
+
+
+@media (max-width: 768px) {
+  .depoPai {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .depoTitulo {
+    align-items: flex-start; /* ou center, se quiser centralizar no mobile */
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .depoCards {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+    align-items: center;
+  }
+}

@@ -189,19 +189,19 @@ export const DBFAQ = [
 //  Depoimentos
 export const DBDepoimentos = [
   {
-    nome: "Tutora 1",
+    nome: "Lúcia M.",
     texto: "Equipe atenciosa, minhas gatinhas ficaram super tranquilas. Recebi fotos e um relatório a cada visita!",
-    foto: "/depo1.png",
+    foto: "/tutora1.jpeg",
   },
   {
-    nome: "Tutora 2",
-    texto: "Equipe atenciosa, minhas gatinhas ficaram super tranquilas. Recebi fotos e um relatório a cada visita!",
-    foto: "/depo2.png",
+    nome: "Marina S.",
+    texto: "Foi um alívio saber que podia contar com alguém tão cuidadosa. Meu gato é muito tímido, mas ela soube respeitar o tempo dele. Quando voltei, estava super tranquilo",
+    foto: "/tutora2.jpeg",
   },
   {
-    nome: "Tutora 3",
-    texto: "Equipe atenciosa, minhas gatinhas ficaram super tranquilas. Recebi fotos e um relatório a cada visita!",
-    foto: "/depo3.png",
+    nome: "Pedro H.",
+    texto: "Adorei o carinho com que trataram meu velhinho. Seguiram à risca todas as orientações médicas e ainda me mantiveram informada com vídeos e mensagens. Recomendo de olhos fechados",
+    foto: "/tutora3.jpg",
   },
 ];
 
