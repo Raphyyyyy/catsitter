@@ -251,3 +251,14 @@ whatsapp: {
     aviso: "Ao enviar, você concorda com nossa política de privacidade.",
   },
 };
+
+//---------------------------------------------------------------------------------------------------------------
+// Rodapé
+
+export const DBRodape = {
+  texto: "© 2024 WeCare. Todos os direitos reservados.",
+  links: [
+    { label: "Política de Privacidade", href: "#" },
+    { label: "Termos de Serviço", href: "#" },
+  ],
+};

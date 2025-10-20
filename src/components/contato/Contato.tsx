@@ -1,5 +1,6 @@
 import ContatoForm from "./ContatoForm";
 import { DBContato } from "../../DB/DB";
+import "../../style/Contato.css";
 
 const Contato = () => {
   return (

@@ -1,0 +1,148 @@
+/* Contato.css */
+
+.contatoPai {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+  width: 60%;
+  margin-left: 22rem;
+  margin-top: 2rem;
+}
+
+.textoContato {
+  flex: 1 1 45%;
+}
+
+.textoContato h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.textoContato h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.textoContato ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.textoContato li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.botaoWhatsapp {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botaoWhatsapp:hover {
+  background-color: #1ebe5b;
+}
+
+.formContato {
+  flex: 1 1 45%;
+}
+
+.formularioContato {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.campo textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+button[type="submit"] {
+  padding: 0.75rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.aviso {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+
+
+@media (max-width: 768px) {
+.contatoPai {
+flex-direction: column;
+margin: 0 auto;
+width: 90%;
+overflow: hidden;
+}
+
+
+.textoContato li {
+white-space: normal;
+word-break: break-word;
+}
+
+
+.textoContato,
+.formContato {
+flex: 1 1 100%;
+}
+
+
+.botaoWhatsapp {
+width: 100%;
+text-align: center;
+box-sizing: border-box;
+}
+
+
+button[type="submit"] {
+width: 100%;
+box-sizing: border-box;
+}
+
+
+.campo input,
+.campo textarea {
+width: 100%;
+box-sizing: border-box;
+}
+}

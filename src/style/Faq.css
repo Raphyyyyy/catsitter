@@ -47,7 +47,7 @@
 }
 
 .accordion-body {
-  margin-top: 0.5rem;
+  margin-top: 2rem 0;
   padding: 0.75rem 1.25rem;
   background: #fff;
   border-left: 2px solid #ec4899;

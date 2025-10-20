@@ -8,6 +8,7 @@ import Planos from './components/planos/Planos'
 import Depo from './depoimentos/depo'
 import FAQ from './components/faq/Faq'
 import Contato from './components/contato/Contato'
+import Rodape from './components/rodape/Rodape'
 
 function App() {
 
@@ -45,6 +46,10 @@ function App() {
 
         <div className="contato">
             <Contato />
+        </div>
+
+        <div className="rodape">
+            <Rodape />
         </div>
 
         
