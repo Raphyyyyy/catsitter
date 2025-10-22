@@ -24,27 +24,27 @@ function App() {
             <Apresentacao />
         </div>
 
-        <div className="servicos">
+        <div className="servicos" id="servicos">
             <Servicos />
         </div>
 
-        <div className="mapa">
+        <div className="mapa" id="area">
             <Area />
         </div>
 
-        <div className="plano">
+        <div className="plano" id="planos">
             <Planos />
         </div>
 
-        <div className="depoimentos">
+        <div className="depoimentos" id="depoimentos">
             <Depo />
         </div>
 
-        <div className="perguntas">
+        <div className="perguntas" id="faq">
             <FAQ />
         </div>
 
-        <div className="contato">
+        <div className="contato" id="contato">
             <Contato />
         </div>
 
