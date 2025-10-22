@@ -1,8 +1,8 @@
 // src/components/depo/Depo.tsx
 import React from 'react'
 import DepoCard from './depoCard'
-import { DBDepoimentos } from "../DB/DB";
-import '../style/depo.css'
+import { DBDepoimentos } from "../../DB/DB";
+import '../../style/depo.css'
 
 const Depo = () => {
   return (

@@ -1,4 +1,4 @@
-import "../style/depoCard.css"
+import "../../style/depoCard.css";
 const DepoCard = ({ nome, texto, foto }) => {
   return (
     <div className='depoCard'>

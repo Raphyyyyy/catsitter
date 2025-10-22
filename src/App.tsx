@@ -5,16 +5,19 @@ import Apresentacao from './components/apresentacao/Apresentacao'
 import Servicos from './components/servicos/Servicos'
 import Area from './components/area/AreaAtt'
 import Planos from './components/planos/Planos'
-import Depo from './depoimentos/depo'
+import Depo from './components/depoimentos/depo'
 import FAQ from './components/faq/Faq'
 import Contato from './components/contato/Contato'
 import Rodape from './components/rodape/Rodape'
+import Whatsapp from './addons/Whatsapp'
 
 function App() {
 
 
   return (
     <>
+        <Whatsapp />
+
         <div className="header">
             <Menu />
             <Home />
