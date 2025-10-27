@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-        <Whatsapp />
+        <Whatsapp />    
 
         <div className="header">
             <Menu />

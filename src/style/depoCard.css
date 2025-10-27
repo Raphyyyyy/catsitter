@@ -9,7 +9,12 @@
   text-align: center;
     
 }
-
+@media (max-width: 600px) {
+  .depoCard {
+    max-width: 100%;
+    height: auto;
+  }
+}
 .depoCard:hover {
     transform: translateY(-10px);
 }
